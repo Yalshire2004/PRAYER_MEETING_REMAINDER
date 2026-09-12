@@ -1,0 +1,23 @@
+{
+  "name": "prayer-recorder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Thursday 5 AM prayer schedule with a Monday morning leader reminder for Render Cron.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "reminder": "node src/send-reminder.js",
+    "reminder:dry": "node src/send-reminder.js --dry-run",
+    "test": "node --test src/*.test.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "luxon": "^3.7.2",
+    "nodemailer": "^10.0.9"
+  }
+}
