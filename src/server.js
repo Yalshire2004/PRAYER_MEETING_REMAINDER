@@ -60,5 +60,5 @@ app.post("/api/remind", async (req, res) => {
 
 const port = Number(process.env.PORT || 3000);
 app.listen(port, () => {
-  console.log(`Prayer Recorder listening on http://localhost:${port}`);
+  console.log(`PRAYER MEETING REMAINDER listening on http://localhost:${port}`);
 });

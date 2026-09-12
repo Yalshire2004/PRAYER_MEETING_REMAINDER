@@ -1,9 +1,9 @@
 {
-  "name": "prayer-recorder",
+  "name": "prayer-meeting-remainder",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Thursday 5 AM prayer schedule with a Monday morning leader reminder for Render Cron.",
+  "description": "PRAYER MEETING REMAINDER — Monday email for the Thursday 5 AM prayer.",
   "engines": {
     "node": ">=20"
   },

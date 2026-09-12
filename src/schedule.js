@@ -8,7 +8,7 @@ import {
   TIMEZONE,
 } from "./config.js";
 
-/** Official Thursday Morning Prayer schedule (through December 31, 2026). */
+/** Official PRAYER MEETING REMAINDER schedule (through December 31, 2026). */
 export const PUBLISHED_MEETINGS = [
   { date: "2026-07-16", leader: "Jessica" },
   { date: "2026-07-23", leader: "Gianina" },

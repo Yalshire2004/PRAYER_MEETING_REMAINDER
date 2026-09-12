@@ -18,7 +18,7 @@ export function buildReminderEmail(meeting) {
     `— ${VERSE.reference}`,
     ``,
     `À jeudi,`,
-    `Prayer Recorder`,
+    `PRAYER MEETING REMAINDER`,
   ].join("\n");
 
   const html = `<!DOCTYPE html>
@@ -30,7 +30,7 @@ export function buildReminderEmail(meeting) {
           <table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width:560px;background:#fffdf8;border:1px solid #e6dcc8;border-radius:16px;padding:40px 32px;font-family:Georgia,'Times New Roman',serif;color:#1c1915;">
             <tr>
               <td>
-                <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#8a6d3b;">Thursday Morning Prayer</p>
+                <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#8a6d3b;">PRAYER MEETING REMAINDER</p>
                 <h1 style="margin:0 0 24px;font-size:28px;line-height:1.25;font-weight:600;">Cette semaine : ${escapeHtml(meeting.name)}</h1>
                 <p style="margin:0 0 16px;font-size:17px;line-height:1.6;">Bonjour Jessica, Gianina et Eric,</p>
                 <p style="margin:0 0 16px;font-size:17px;line-height:1.6;">Rappel pour la prière du <strong>jeudi ${escapeHtml(meeting.dateLabelFr)} à 5h00</strong>. Cette semaine, c'est <strong>${escapeHtml(meeting.name)}</strong> qui conduit la prière.</p>
@@ -77,7 +77,7 @@ export async function sendReminderEmail(meeting, { dryRun = false } = {}) {
   const message = buildReminderEmail(meeting);
   const from =
     process.env.SMTP_FROM ||
-    `Prayer Recorder <${process.env.SMTP_USER || "noreply@localhost"}>`;
+    `PRAYER MEETING REMAINDER <${process.env.SMTP_USER || "noreply@localhost"}>`;
 
   if (dryRun) {
     return {

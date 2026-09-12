@@ -1,6 +1,6 @@
 services:
   - type: cron
-    name: prayer-monday-reminder
+    name: prayer-meeting-remainder
     runtime: node
     plan: starter
     region: oregon

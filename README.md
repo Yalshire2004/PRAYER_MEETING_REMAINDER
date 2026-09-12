@@ -1,4 +1,4 @@
-# Prayer Recorder
+# PRAYER MEETING REMAINDER
 
 Monday-morning reminder for the Thursday 5:00 AM prayer. Jessica, Gianina, and Eric each receive one email naming who leads that week.
 
@@ -38,7 +38,7 @@ SMTP_PORT=587
 SMTP_SECURE=false
 SMTP_USER=yalshire2004@gmail.com
 SMTP_PASS=xxxx xxxx xxxx xxxx
-SMTP_FROM=Prayer Recorder <yalshire2004@gmail.com>
+SMTP_FROM=PRAYER MEETING REMAINDER <yalshire2004@gmail.com>
 ```
 
 Then send a real test:
